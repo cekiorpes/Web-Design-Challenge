@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather and Latitude</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav class="navbar">
-            <h1>Latitude</h1>
-        </nav>
+      <nav class="navbar">
+        <h1>Latitude and Weather</h1>
+        <select
+          name="ddmenu_name"
+          id="ddmenu_name"
+          onChange="window.open(ddmenu_name.value,'newtab')"
+        >
+          <option value="temperature.html">Temperature</option>
+          <option value="humidity.html">Humidity</option>
+          <option value="cloudiness.html">Cloudiness</option>
+          <option value="wind_speed.html">Wind Speed</option>
+        </select>
+      </nav>
     </div>
-</body>
+  </body>
 </html>
