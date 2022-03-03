@@ -14,6 +14,34 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h2>Latitude vs. Cloudiness</h2>
+  <nav class="navbar">
+    <h3><a href="index.html">Latitude and Weather</a></h3>
+    <select
+      name="ddmenu"
+      id="ddmenu"
+      onChange="window.open(ddmenu.value,'newtab')"
+    >
+      <option>Plots</option>
+      <option value="temperature.html">Temperature</option>
+      <option value="humidity.html">Humidity</option>
+      <option value="cloudiness.html">Cloudiness</option>
+      <option value="wind_speed.html">Wind Speed</option>
+      <option id="navbar_tabs" value="comparison.html">Comparison</option>
+      <option id="navbar_tabs" value="data.html">Data</option>
+    </select>
+    <ul>
+      <li>
+        <a href="comparison.html">Comparison</a>
+      </li>
+      <li>
+        <a href="data.html">Data</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="wrap">
+      <div class="content" , id="box">
+        <h2>Latitude vs. Cloudiness</h2>
 </body>
 </html>
