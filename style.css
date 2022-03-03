@@ -1,14 +1,44 @@
+.content {
+    position: relative;
+  }
+
 .sidebar {
     margin: 0;
     padding: 0;
     width: 200px;
-    position: fixed;
+    position: absolute;
     height: 100%;
+    right:50px;
+    top: 80px;
 }
 
 .sidebar a{
     float:inline-end;
 }
+
+.navbar{
+    padding: 10px;
+    left: 10 px;
+}
+
+#ddmenu_name{
+    display: inline-block;
+    right: 200px;
+    position:absolute;
+    top: 20px;
+}
+
+.navbar li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar li a {
+    color: #000;
+    text-decoration: none;
+    top: 40px;
+  }
 
 @media screen and (max-width: 500px) {
     .sidebar a {

@@ -15,71 +15,78 @@
   </head>
 
   <body>
-    <div class="sidebar">
-      <a href="temperature.html">
-        <img
-          src="Resources/assets/images/Fig1.png"
-          alt="Temperature"
-          style="width: 250px; height: 200px"
-        />
-      </a>
-      <a href="humidity.html">
-        <img
-          src="Resources/assets/images/Fig2.png"
-          alt="Humidity"
-          style="width: 250px; height: 200px"
-        />
-      </a>
-      <a href="cloudiness.html"></a>
-      <img
-        src="Resources/assets/images/Fig3.png"
-        alt="Cloudiness"
-        style="width: 250px; height: 200px"
-      />
-      <a href="wind_speed.html">
-        <img
-          src="Resources/assets/images/Fig4.png"
-          alt="Wind Speed"
-          style="width: 250px; height: 200px"
-        />
-      </a>
-    </div>
+    <nav class="navbar">
+      <h3>Latitude and Weather</h3>
+      <select
+        name="ddmenu_name"
+        id="ddmenu_name"
+        onChange="window.open(ddmenu_name.value,'newtab')"
+      >
+        <option>Plots</option>
+        <option value="temperature.html">Temperature</option>
+        <option value="humidity.html">Humidity</option>
+        <option value="cloudiness.html">Cloudiness</option>
+        <option value="wind_speed.html">Wind Speed</option>
+      </select>
+      <ul>
+        <li>
+          <a href="comparison.html">Comparison</a>
+        </li>
+        <li>
+          <a href="data.html">Data</a>
+        </li>
+      </ul>
+    </nav>
 
     <div class="container">
-      <nav class="navbar">
-        <h1>Latitude and Weather</h1>
-        <select
-          name="ddmenu_name"
-          id="ddmenu_name"
-          onChange="window.open(ddmenu_name.value,'newtab')"
-        >
-          <option value="temperature.html">Temperature</option>
-          <option value="humidity.html">Humidity</option>
-          <option value="cloudiness.html">Cloudiness</option>
-          <option value="wind_speed.html">Wind Speed</option>
-        </select>
-        <ul>
-          <li>
-            <a href="comparison.html">Comparison</a>
-          </li>
-          <li>
-            <a href="data.html">Data</a>
-          </li>
-        </ul>
-      </nav>
-      <h2>Summary:Latitude vs X</h2>
-      <p>
-        This project examined how particular weather parameters changed for a
-        city based on the proximity or distance to the equator. The cities were
-        randomly chosen and weather data, including country, latitude,
-        longitude, maximum temperature, humidity, cloudiness, and wind speed
-        were obtained for the day of query (January 25th, 2017).
-      </p>
-      <p>
-        These data were then plotted to graphically evaluate the results and
-        determine whether or not a potential correlation exists. These images
-        display the results.
-      </p>
+      <div class="content" , id="box">
+        <h2>Summary: Latitude vs X</h2>
+        <p>
+          This project examined how particular weather parameters changed for a
+          city based on the proximity or distance to the equator. The cities
+          were randomly chosen and weather data, including country, latitude,
+          longitude, maximum temperature, humidity, cloudiness, and wind speed
+          were obtained from OpenWeatherMap API for the day of query (January
+          25th, 2017).
+        </p>
+        <p>
+          These data were then plotted using Matplotlib to graphically evaluate
+          the results and determine whether or not a potential correlation
+          exists. These images display the results.
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <h4>Visualizations</h4>
+        <a href="temperature.html">
+          <img
+            src="Resources/assets/images/Fig1.png"
+            alt="Temperature"
+            style="width: 250px; height: 200px"
+          />
+        </a>
+        <a href="humidity.html">
+          <img
+            src="Resources/assets/images/Fig2.png"
+            alt="Humidity"
+            style="width: 250px; height: 200px"
+          />
+        </a>
+        <a href="cloudiness.html">
+          <img
+            src="Resources/assets/images/Fig3.png"
+            alt="Cloudiness"
+            style="width: 250px; height: 200px"
+          />
+        </a>
+        <a href="wind_speed.html">
+          <img
+            src="Resources/assets/images/Fig4.png"
+            alt="Wind Speed"
+            style="width: 250px; height: 200px"
+          />
+        </a>
+      </div>
     </div>
   </body>
 </html>
