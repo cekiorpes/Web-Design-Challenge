@@ -1,62 +1,114 @@
+h2,
+h4 {
+  color: rgb(114, 144, 201);
+}
+
+h3 {
+  background-color: rgb(114, 144, 201);
+  padding: 20px;
+  padding-right: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+h3 a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(114, 144, 201);
+}
+
 .content {
-    position: relative;
-  }
+  position: absolute;
+  border: 1px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+p{
+  padding:30px;
+}
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    position: absolute;
-    height: 100%;
-    right:50px;
-    top: 80px;
+  margin: 0;
+  padding: 20px;
+  width: 200px;
+  position: absolute;
+  height: 100%;
+  right: 300px;
+  top: 100px;
+  float: left;
+  cursor: pointer;
 }
 
-.sidebar a{
-    float:inline-end;
-}
-
-#navbar_tabs{
+#navbar_tabs {
   display: none;
 }
 
-.navbar{
-    padding: 10px;
-    left: 10 px;
+.navbar {
+  padding: 0px;
+  left: 10 px;
+  background-color: rgb(207, 203, 203);
 }
 
-#ddmenu{
-    display: inline-block;
-    right: 200px;
-    position:absolute;
-    top: 20px;
+#ddmenu {
+  display: inline-block;
+  right: 200px;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
 }
 
-.navbar li{
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px;
+.navbar li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .navbar li a {
-    color: #000;
-    text-decoration: none;
-    top: 40px;
+  color: #000;
+  text-decoration: none;
+  top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 90%;
+    margin: auto;
   }
 
-
-
-@media screen and (max-width: 500px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-
-    .navbar ul{
-      visibility: hidden;
-    }
-
-    #navbar_tabs{
-      display: inline; 
-    }
+  .content,
+  .sidebar {
+    width: 100%;
+    float: none;
+    position: static;
   }
+
+  .sidebar {
+    display: table-footer-group;
+    width: auto;
+    height: auto;
+  }
+
+  #ddmenu {
+    right: 50px;
+  }
+
+  .navbar{
+    background-color: rgb(114, 144, 201);
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #navbar_tabs {
+    display: inline;
+  }
+
+  h4{
+    color:aliceblue;
+  }
+}

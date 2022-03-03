@@ -16,7 +16,7 @@
 
   <body>
     <nav class="navbar">
-      <h3>Latitude and Weather</h3>
+      <h3><a href = "index.html">Latitude and Weather</a></h3>
       <select
         name="ddmenu"
         id="ddmenu"
@@ -27,8 +27,8 @@
         <option value="humidity.html">Humidity</option>
         <option value="cloudiness.html">Cloudiness</option>
         <option value="wind_speed.html">Wind Speed</option>
-        <option id = "navbar_tabs" value = "comparison.html">Comparison</option>
-        <option id = "navbar_tabs" value = "data.html">Data</option>
+        <option id="navbar_tabs" value="comparison.html">Comparison</option>
+        <option id="navbar_tabs" value="data.html">Data</option>
       </select>
       <ul>
         <li>
@@ -41,61 +41,65 @@
     </nav>
 
     <div class="container">
-      <div class="content" , id="box">
-        <h2>Summary: Latitude vs X</h2>
-        <div class = "row">
-          <div class = "col-md-6 col-sm">
-            <p>
-            This project examined how particular weather parameters changed for a
-            city based on the proximity or distance to the equator. The cities
-            were randomly chosen and weather data, including country, latitude,
-            longitude, maximum temperature, humidity, cloudiness, and wind speed
-            were obtained from OpenWeatherMap API for the day of query (January
-            25th, 2017).
-            </p>
+      <div class="wrap">
+        <div class="content" , id="box">
+          <h2>Summary: Latitude vs X</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm">
+              <p>
+                This project examined how particular weather parameters changed
+                for a city based on the proximity or distance to the equator.
+                The cities were randomly chosen and weather data, including
+                country, latitude, longitude, maximum temperature, humidity,
+                cloudiness, and wind speed were obtained from OpenWeatherMap API
+                for the day of query (January 25th, 2017).
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm">
+              <p>
+                These data were then plotted using Matplotlib to graphically
+                evaluate the results and determine whether or not a potential
+                correlation exists. These images display the results.
+              </p>
+            </div>
           </div>
         </div>
-        <div class = "row">
-          <div class = "col-md-6 col-sm">
-            <p>
-              These data were then plotted using Matplotlib to graphically evaluate
-              the results and determine whether or not a potential correlation
-              exists. These images display the results.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="sidebar">
-        <h4>Visualizations</h4>
-        <a href="temperature.html">
-          <img
-            src="Resources/assets/images/Fig1.png"
-            alt="Temperature"
-            style="width: 250px; height: 200px"
-          />
-        </a>
-        <a href="humidity.html">
-          <img
-            src="Resources/assets/images/Fig2.png"
-            alt="Humidity"
-            style="width: 250px; height: 200px"
-          />
-        </a>
-        <a href="cloudiness.html">
-          <img
-            src="Resources/assets/images/Fig3.png"
-            alt="Cloudiness"
-            style="width: 250px; height: 200px"
-          />
-        </a>
-        <a href="wind_speed.html">
-          <img
-            src="Resources/assets/images/Fig4.png"
-            alt="Wind Speed"
-            style="width: 250px; height: 200px"
-          />
-        </a>
+        <div class="sidebar">
+          <h4>Visualizations</h4>
+          <!-- <div class="row" , id="small"> -->
+            <a href="temperature.html">
+              <img
+                src="Resources/assets/images/Fig1.png"
+                alt="Temperature"
+                style="width: 250px; height: 200px"
+              />
+            </a>
+            <a href="humidity.html">
+              <img
+                src="Resources/assets/images/Fig2.png"
+                alt="Humidity"
+                style="width: 250px; height: 200px"
+              />
+            </a>
+            <a href="cloudiness.html">
+              <img
+                src="Resources/assets/images/Fig3.png"
+                alt="Cloudiness"
+                style="width: 250px; height: 200px"
+              />
+            </a>
+            <a href="wind_speed.html">
+              <img
+                src="Resources/assets/images/Fig4.png"
+                alt="Wind Speed"
+                style="width: 250px; height: 200px"
+              />
+            </a>
+          <!-- </div> -->
+        </div>
       </div>
     </div>
   </body>
