@@ -18,15 +18,17 @@
     <nav class="navbar">
       <h3>Latitude and Weather</h3>
       <select
-        name="ddmenu_name"
-        id="ddmenu_name"
-        onChange="window.open(ddmenu_name.value,'newtab')"
+        name="ddmenu"
+        id="ddmenu"
+        onChange="window.open(ddmenu.value,'newtab')"
       >
         <option>Plots</option>
         <option value="temperature.html">Temperature</option>
         <option value="humidity.html">Humidity</option>
         <option value="cloudiness.html">Cloudiness</option>
         <option value="wind_speed.html">Wind Speed</option>
+        <option id = "navbar_tabs" value = "comparison.html">Comparison</option>
+        <option id = "navbar_tabs" value = "data.html">Data</option>
       </select>
       <ul>
         <li>
@@ -41,19 +43,27 @@
     <div class="container">
       <div class="content" , id="box">
         <h2>Summary: Latitude vs X</h2>
-        <p>
-          This project examined how particular weather parameters changed for a
-          city based on the proximity or distance to the equator. The cities
-          were randomly chosen and weather data, including country, latitude,
-          longitude, maximum temperature, humidity, cloudiness, and wind speed
-          were obtained from OpenWeatherMap API for the day of query (January
-          25th, 2017).
-        </p>
-        <p>
-          These data were then plotted using Matplotlib to graphically evaluate
-          the results and determine whether or not a potential correlation
-          exists. These images display the results.
-        </p>
+        <div class = "row">
+          <div class = "col-md-6 col-sm">
+            <p>
+            This project examined how particular weather parameters changed for a
+            city based on the proximity or distance to the equator. The cities
+            were randomly chosen and weather data, including country, latitude,
+            longitude, maximum temperature, humidity, cloudiness, and wind speed
+            were obtained from OpenWeatherMap API for the day of query (January
+            25th, 2017).
+            </p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-6 col-sm">
+            <p>
+              These data were then plotted using Matplotlib to graphically evaluate
+              the results and determine whether or not a potential correlation
+              exists. These images display the results.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="sidebar">
