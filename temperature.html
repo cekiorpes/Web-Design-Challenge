@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latitude and Temperature</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,36 +12,63 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <h3><a href="index.html">Latitude and Weather</a></h3>
-    <select
-      name="ddmenu"
-      id="ddmenu"
-      onChange="window.open(ddmenu.value,'newtab')"
-    >
-      <option>Plots</option>
-      <option value="temperature.html">Temperature</option>
-      <option value="humidity.html">Humidity</option>
-      <option value="cloudiness.html">Cloudiness</option>
-      <option value="wind_speed.html">Wind Speed</option>
-      <option id="navbar_tabs" value="comparison.html">Comparison</option>
-      <option id="navbar_tabs" value="data.html">Data</option>
-    </select>
-    <ul>
-      <li>
-        <a href="comparison.html">Comparison</a>
-      </li>
-      <li>
-        <a href="data.html">Data</a>
-      </li>
-    </ul>
-  </nav>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h3><a href="index.html">Latitude and Weather</a></h3>
+      <select
+        name="ddmenu"
+        id="ddmenu"
+        onChange="window.open(ddmenu.value,'newtab')"
+      >
+        <option>Plots</option>
+        <option value="temperature.html">Temperature</option>
+        <option value="humidity.html">Humidity</option>
+        <option value="cloudiness.html">Cloudiness</option>
+        <option value="wind_speed.html">Wind Speed</option>
+        <option id="navbar_tabs" value="comparison.html">Comparison</option>
+        <option id="navbar_tabs" value="data.html">Data</option>
+      </select>
+      <ul>
+        <li>
+          <a href="comparison.html">Comparison</a>
+        </li>
+        <li>
+          <a href="data.html">Data</a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="container">
-    <div class="wrap">
-      <div class="content" , id="box">
-        <h2>Latitude vs. Temperature</h2>
-</body>
+    <div class="container">
+      <div class="wrap">
+        <div class="content" , id="box">
+          <h2>Latitude vs. Temperature</h2>
+          <div class="row">
+            <div class = "col-md-8 col-sm-6">
+              <img
+                src="Resources/assets/images/Fig1.png"
+                alt="Max Temperature"
+                class = "responsive"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 col-sm">
+              <p>
+                This graph displays how maximum temperature changes relative to
+                the distance from the equator. As one moves from the equator,
+                the maximum temperature decreases. As shown in the graph, this
+                change is more dramatic in the northern hemisphere. This is
+                likely due to the tilt of the earth's axis and its effect on the
+                season. These data were obtained in January, which is summer in
+                the southern hemisphere and temperatures are overall warmer. In
+                contrast, at the time of data collection, it was winter in the
+                Northern hemisphere and temperatures tend to be overall colder.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

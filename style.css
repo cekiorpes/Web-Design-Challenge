@@ -73,6 +73,11 @@ p{
   top: 40px;
 }
 
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 600px) {
   .wrap {
     width: 90%;
