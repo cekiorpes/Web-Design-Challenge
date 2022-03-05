@@ -41,11 +41,11 @@
     </nav>
 
     <div class="container">
-      <div class="wrap">
-        <div class="content" , id="box">
+      <div class="wrap row">
+        <div class="content col-md-7" , id="box">
           <h2>Summary: Latitude vs X</h2>
           <div class="row">
-            <div class="col-md-6 col-sm">
+            <div class="col-md-12 col-sm">
               <p>
                 This project examined how particular weather parameters changed
                 for a city based on the proximity or distance to the equator.
@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-sm">
+            <div class="col-md-12 col-sm">
               <p>
                 These data were then plotted using Matplotlib to graphically
                 evaluate the results and determine whether or not a potential
@@ -67,36 +67,46 @@
           </div>
         </div>
 
-        <div class="sidebar">
-          <h4 id = "sidebar_title">Visualizations</h4>
-          <a href="temperature.html">
-            <img
-              src="Resources/assets/images/Fig1.png"
-              alt="Temperature"
-              style="width: 250px; height: 200px"
-            />
-          </a>
-          <a href="humidity.html">
-            <img
-              src="Resources/assets/images/Fig2.png"
-              alt="Humidity"
-              style="width: 250px; height: 200px"
-            />
-          </a>
-          <a href="cloudiness.html">
-            <img
-              src="Resources/assets/images/Fig3.png"
-              alt="Cloudiness"
-              style="width: 250px; height: 200px"
-            />
-          </a>
-          <a href="wind_speed.html">
-            <img
-              src="Resources/assets/images/Fig4.png"
-              alt="Wind Speed"
-              style="width: 250px; height: 200px"
-            />
-          </a>
+        <div class="col-md-5" , id="sidebar">
+          <div id="sidebar_box">
+            <h4 id="sidebar_title">Visualizations</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="temperature.html">
+                  <img class="img-fluid"
+                    src="Resources/assets/images/Fig1.png"
+                    alt="Temperature"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="humidity.html">
+                  <img class="img-fluid"
+                    src="Resources/assets/images/Fig2.png"
+                    alt="Humidity"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="cloudiness.html">
+                  <img class="img-fluid"
+                    src="Resources/assets/images/Fig3.png"
+                    alt="Cloudiness"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="wind_speed.html">
+                  <img class="img-fluid"
+                    src="Resources/assets/images/Fig4.png"
+                    alt="Wind Speed"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
