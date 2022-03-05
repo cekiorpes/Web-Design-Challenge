@@ -76,6 +76,23 @@ p{
   height: auto;
 }
 
+#data_box{
+  padding: 50px;
+}
+
+.dataframe {
+  width: 90%;
+  background-color: aliceblue;
+}
+
+td, th{
+  width: 2%;
+}
+
+tr:nth-child(odd){
+  background-color:rgb(210, 223, 247);
+}
+
 @media screen and (max-width: 600px) {
   .wrap {
     width: 90%;
@@ -111,5 +128,10 @@ p{
 
   #sidebar_title{
     color:aliceblue;
+  }
+
+  .dataframe{
+    text-align: center;
+    width: 2%;
   }
 }
