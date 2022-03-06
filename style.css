@@ -21,7 +21,7 @@ h3 {
 }
 
 body {
-  background-color: rgb(167, 187, 221);
+  background-color: rgb(191, 207, 235);
 }
 
 .content {
@@ -44,11 +44,6 @@ p {
 #sidebar {
   margin-top: 20px;
   cursor: pointer;
-}
-
-
-.column2{
-  margin-left: -24px;
 }
 
 .mycondlink {
