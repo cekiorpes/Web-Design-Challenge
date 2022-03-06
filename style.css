@@ -79,6 +79,10 @@ tr:nth-child(odd) {
     margin: auto;
   }
 
+  .navbar{
+    background-color: rgb(114, 144, 201) ;
+  }
+
   .content,
   .sidebar {
     width: 100%;
