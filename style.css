@@ -6,18 +6,22 @@ h4 {
 h3 {
   background-color: rgb(114, 144, 201);
   padding: 20px;
-  padding-right: 10px;
-  margin: 0;
+  margin-bottom: -8px;
   cursor: pointer;
 }
 
-h3 a{
+#homelink {
   color: aliceblue;
   text-decoration: none;
 }
 
+.navbar {
+  background-color: aliceblue;
+  margin-top: -10px;
+}
+
 body {
-  background-color: rgb(167, 187, 221);
+  background-color: rgb(191, 207, 235);
 }
 
 .content {
@@ -28,11 +32,11 @@ body {
   margin-top: 20px;
 }
 
-p{
-  padding:30px;
+p {
+  padding: 30px;
 }
 
-#sidebar_box{
+#sidebar_box {
   background-color: aliceblue;
   padding: 20px;
 }
@@ -42,42 +46,16 @@ p{
   cursor: pointer;
 }
 
-#navbar_tabs {
+.mycondlink {
   display: none;
 }
 
-.navbar {
-  padding: 0px;
-  left: 10 px;
-  background-color:aliceblue;
-}
-
-#ddmenu {
-  display: inline-block;
-  position: absolute;
-  right: 200px;
-  top: 20px;
-  cursor: pointer;
-}
-
-.navbar li {
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.navbar li a {
-  color: #000;
-  text-decoration: none;
-  top: 40px;
-}
-
-.responsive{
+.responsive {
   max-width: 100%;
   height: auto;
 }
 
-#data_box{
+#data_box {
   padding: 50px;
 }
 
@@ -86,15 +64,16 @@ p{
   background-color: aliceblue;
 }
 
-td, th{
+td,
+th {
   width: 2%;
 }
 
-tr:nth-child(odd){
-  background-color:rgb(210, 223, 247);
+tr:nth-child(odd) {
+  background-color: rgb(210, 223, 247);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
   .wrap {
     width: 90%;
     margin: auto;
@@ -111,27 +90,17 @@ tr:nth-child(odd){
     height: auto;
   }
 
-  #ddmenu {
-    right: 50px;
+  #mynav-dropdown {
+    display: none;
   }
 
-  .navbar{
-    background-color: rgb(114, 144, 201);
-  }
-
-  .navbar ul {
-    visibility: hidden;
-  }
-
-  #navbar_tabs {
+  .mycondlink,
+  .mylink {
     display: inline;
+    padding: 15px;
   }
 
-  /* #sidebar_title{
-    color:aliceblue;
-  } */
-
-  .dataframe{
+  .dataframe {
     text-align: center;
     width: 2%;
   }
