@@ -46,6 +46,11 @@ p {
   cursor: pointer;
 }
 
+
+.column2{
+  margin-left: -24px;
+}
+
 .mycondlink {
   display: none;
 }
