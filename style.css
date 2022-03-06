@@ -6,23 +6,19 @@ h4 {
 h3 {
   background-color: rgb(114, 144, 201);
   padding: 20px;
-  padding-right: 10px;
-  margin: 0;
+  margin-bottom: -8px;
   cursor: pointer;
 }
 
-#homelink{
+#homelink {
   color: aliceblue;
   text-decoration: none;
 }
 
-.navbar{
+.navbar {
   background-color: aliceblue;
+  margin-top: -10px;
 }
-
-/* #navlinklist{
-  padding: 20px;
-} */
 
 body {
   background-color: rgb(167, 187, 221);
@@ -36,11 +32,11 @@ body {
   margin-top: 20px;
 }
 
-p{
-  padding:30px;
+p {
+  padding: 30px;
 }
 
-#sidebar_box{
+#sidebar_box {
   background-color: aliceblue;
   padding: 20px;
 }
@@ -50,16 +46,16 @@ p{
   cursor: pointer;
 }
 
-.mycondlink{
+.mycondlink {
   display: none;
 }
 
-.responsive{
+.responsive {
   max-width: 100%;
   height: auto;
 }
 
-#data_box{
+#data_box {
   padding: 50px;
 }
 
@@ -68,16 +64,16 @@ p{
   background-color: aliceblue;
 }
 
-td, th{
+td,
+th {
   width: 2%;
 }
 
-tr:nth-child(odd){
-  background-color:rgb(210, 223, 247);
+tr:nth-child(odd) {
+  background-color: rgb(210, 223, 247);
 }
 
 @media screen and (max-width: 991.98px) {
-/* @include media-breakpoint-down(md){ */
   .wrap {
     width: 90%;
     margin: auto;
@@ -94,16 +90,17 @@ tr:nth-child(odd){
     height: auto;
   }
 
-  #mynav-dropdown{
+  #mynav-dropdown {
     display: none;
   }
 
-  .mycondlink{
-    /* visibility: visible; */
+  .mycondlink,
+  .mylink {
     display: inline;
+    padding: 15px;
   }
 
-  .dataframe{
+  .dataframe {
     text-align: center;
     width: 2%;
   }
