@@ -11,8 +11,17 @@ h3 {
   cursor: pointer;
 }
 
-h3 a{
+#homelink{
   color: aliceblue;
+  text-decoration: none;
+}
+
+.navbar{
+  background-color: aliceblue;
+}
+
+#navbarlink{
+  color: #000;
   text-decoration: none;
 }
 
@@ -42,34 +51,8 @@ p{
   cursor: pointer;
 }
 
-#navbar_tabs {
+.mycondlink{
   display: none;
-}
-
-.navbar {
-  padding: 0px;
-  left: 10 px;
-  background-color:aliceblue;
-}
-
-#ddmenu {
-  display: inline-block;
-  position: absolute;
-  right: 200px;
-  top: 20px;
-  cursor: pointer;
-}
-
-.navbar li {
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.navbar li a {
-  color: #000;
-  text-decoration: none;
-  top: 40px;
 }
 
 .responsive{
@@ -94,7 +77,8 @@ tr:nth-child(odd){
   background-color:rgb(210, 223, 247);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
+/* @include media-breakpoint-down(md){ */
   .wrap {
     width: 90%;
     margin: auto;
@@ -111,25 +95,14 @@ tr:nth-child(odd){
     height: auto;
   }
 
-  #ddmenu {
-    right: 50px;
+  #mynav-dropdown{
+    display: none;
   }
 
-  .navbar{
-    background-color: rgb(114, 144, 201);
-  }
-
-  .navbar ul {
-    visibility: hidden;
-  }
-
-  #navbar_tabs {
+  .mycondlink{
+    /* visibility: visible; */
     display: inline;
   }
-
-  /* #sidebar_title{
-    color:aliceblue;
-  } */
 
   .dataframe{
     text-align: center;
